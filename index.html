@@ -68,9 +68,26 @@
 							</div>
 							<footer>
 								<ul class="actions">
-									<li><a href="#" class="button large">Entre em contato agora mesmo!</a></li>
-									<li><a href="#" class="button alt large">Mais informações</a></li>
+									<li><button class="button large" id="whatsappButton">Entre em contato agora mesmo!</button></li>
+									<li><button class="button alt large" id="whatsappButton2">Mais informações</button></li>
 								</ul>
+								
+								<script>
+									const phone = "5585991908723";
+									const message = "Olá, gostaria de obter mais informações.";
+									const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+								
+									// Botão 1
+									document.getElementById("whatsappButton").addEventListener("click", function () {
+										window.open(url, "_blank");
+									});
+								
+									// Botão 2
+									document.getElementById("whatsappButton2").addEventListener("click", function () {
+										window.open(url, "_blank");
+									});
+								</script>
+								
 							</footer>
 						</section>
 
@@ -90,11 +107,11 @@
 										<div class="row">
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+													<a href="#" class="image featured"><img src="images/dentist-8729625_1280.jpg" alt="" /></a>
 													<header>
-														<h3>Ipsum feugiat et dolor</h3>
+														<h3>Clínica odontológica</h3>
 													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+													<p>A clínica valoriza a saúde e bem-estar de seus pacientes, oferecendo flexibilidade de horários para atender demandas.Com uma equipe altamente capacitada e comprometida com o bem-estar dos pacientes...</p>
 													<footer>
 														<ul class="actions">
 															<li><a href="./Pages/page1/index.html" target="_blank" class="button alt">Acesse a página</a></li>
@@ -102,30 +119,32 @@
 													</footer>
 												</section>
 											</div>
+											
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+													<a href="#" class="image featured"><img src="images/blog-92132_1280.jpg" alt="" /></a>
 													<header>
-														<h3>Sed etiam lorem nulla</h3>
+														<h3>Blog de Notícias </h3>
 													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+													<p>A inteligência artificial (IA) já deixou de ser apenas um conceito...</p>
 													<footer>
 														<ul class="actions">
-															<li><a href="./Pages/page2/index.html" target="_blank" class="button alt">Acesse a página</a></li>
+															<li><a href=" ./Pages/page2/index.html" target="_blank" class="button alt">Acesse a página</a></li>
 														</ul>
 													</footer>
 												</section>
 											</div>
+
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+													<a href="#" class="image featured"><img src="images/ai-generated-8733789_1280.png" alt="" /></a>
 													<header>
-														<h3>Consequat et tempus</h3>
+														<h3>Colors</h3>
 													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+													<p>A paleta de cores em fundos desempenha um papel fundamental na estética e na percepção de qualquer design, seja em um site, aplicativo ou peça publicitária. Ela não apenas estabelece a atmosfera do ambiente visual, mas também pode...</p>
 													<footer>
 														<ul class="actions">
-															<li><a href="./Pages/page3/index.html" target="_blank" class="button alt">Acesse a página</a></li>
+															<li><a href="./Pages/page3/index.html " target="_blank" class="button alt">Acesse a página</a></li>
 														</ul>
 													</footer>
 												</section>
@@ -160,8 +179,16 @@
 									</header>
 									<footer>
 										<ul class="actions">
-											<li><a href="#" class="button">Nossa equipe está aqui para ajudar! Entre em contato e descubra como podemos tornar suas ideias realidade.</a></li>
+											<li>
+												<a 
+													href="https://wa.me/5585991908723?text=Olá, gostaria de obter mais informações." 
+													class="button" 
+													target="_blank">
+													Nossa equipe está aqui para ajudar! Entre em contato e descubra como podemos tornar suas ideias realidade.
+												</a>
+											</li>
 										</ul>
+										
 									</footer>
 								</section>
 							</div>
